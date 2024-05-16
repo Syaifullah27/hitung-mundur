@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(15, 16, 19);
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .title{
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .input{
+            width: 300px;
+            padding: 10px;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .input-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            gap: 10px;
+            /* border: 1px solid red; */
+        }
+
+        .input-container label {
+            font-size: small;
+        }
+
+        .btn {
+            margin-left: 5px;
+            width: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            background-color: orange;
+            color: whitesmoke;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Program Hitung Mundur</h1>
+    </div>
+    <h1 id="text" style="text-align: center;">Hitung Mundur</h1>
+    <div class="input-container">
+        <label for="input">*contoh: jun 27,2024 00:00:00*</label>
+        <div style="display: flex;">
+            <input type="text" id="input" placeholder="masukan tanggal dan waktu" class="input">
+            <button class="btn" onclick="getValue()">Kirim</button>
+        </div>
+    </div>
+
+    <!-- <button id="tombol">jangan dimunculkan!</button>
+
+    <button id="button">matikan alert</button> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
